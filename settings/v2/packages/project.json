@@ -4,8 +4,8 @@
     "designResolution": {
       "fitHeight": true,
       "fitWidth": false,
-      "width": 720,
-      "height": 1024
+      "width": 640,
+      "height": 960
     }
   }
 }
