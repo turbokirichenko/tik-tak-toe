@@ -52,14 +52,12 @@ export class TikTakToeContainerScript extends Component implements GameTemplate 
                     this._gameVec9[temp] ? ++CrossWins : ++ZeroWins;
                 }
             }
-            console.log(CrossWins, ZeroWins);
             // check column
             for (let i = 0; i < 3; ++i) {
                 if (eq(i, i + 3) && eq(i, i + 6)) {
                     this._gameVec9[i] ? ++CrossWins : ++ZeroWins;
                 }
             }
-            console.log(CrossWins, ZeroWins);
             // check diag
             for (let i = 0; i < 2; ++i) {
                 const temp = 2*i;
@@ -67,7 +65,6 @@ export class TikTakToeContainerScript extends Component implements GameTemplate 
                     this._gameVec9[4] ? ++CrossWins : ++ZeroWins;
                 }
             }
-            console.log(CrossWins, ZeroWins);
             //resolve winners
             resolve(
                 (CrossWins == ZeroWins)
